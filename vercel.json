@@ -1,15 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "oxitech/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb" }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "oxitech/wsgi.py"
-    }
-  ]
+  "buildCommand": "mkdir -p public && cp oxitech/templates/oxitech/landing.html public/index.html && cp -r oxitech/static public/",
+  "outputDirectory": "public"
 }
