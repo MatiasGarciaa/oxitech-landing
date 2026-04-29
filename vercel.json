@@ -1,4 +1,4 @@
 {
-  "buildCommand": "mkdir -p public && cp oxitech/templates/oxitech/landing.html public/index.html && cp -r oxitech/static public/",
-  "outputDirectory": "public"
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": "oxitech/templates/oxitech"
 }
